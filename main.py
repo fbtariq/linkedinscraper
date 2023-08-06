@@ -23,9 +23,9 @@ def get_with_retry(url, config, retries=3, delay=1):
     for i in range(retries):
         try:
             if len(config['proxies']) > 0:
-                r = requests.get(url, headers=config['headers'], proxies=config['proxies'], timeout=5)
+                r = requests.get(url, headers=config['headers'], proxies=config['proxies'], timeout=35)
             else:
-                r = requests.get(url, headers=config['headers'], timeout=5)
+                r = requests.get(url, headers=config['headers'], timeout=35)
             return BeautifulSoup(r.content, 'html.parser')
         except requests.exceptions.Timeout:
             print(f"Timeout occurred for URL: {url}, retrying in {delay}s...")

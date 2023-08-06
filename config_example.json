@@ -1,31 +1,90 @@
 {
   "proxies": {
-
+    "https": "gw1.dataimpulse.com:823"
   },
-  "headers": {
-
-  },
-  "search_queries": [    
-    {"keywords": "Python developer", "location": "Los Angeles", "f_WT": ""},
-    {"keywords": "Python developer", "location": "USA", "f_WT": "2"}
-
+  "headers": {},
+  "search_queries": [
+    {
+      "keywords": "php developer",
+      "location": "Canada",
+      "f_WT": "2"
+    },
+    {
+      "keywords": "javascript developer",
+      "location": "Canada",
+      "f_WT": "2"
+    },
+    {
+      "keywords": "backend developer",
+      "location": "Canada",
+      "f_WT": "2"
+    },
+    {
+      "keywords": "software developer",
+      "location": "Canada",
+      "f_WT": "2"
+    },
+    {
+      "keywords": "automation developer",
+      "location": "Canada",
+      "f_WT": "2"
+    }
   ],
   "desc_words": [
-    "agriculture", "farm", "food safety", "manufacture", "manufacturing", "Bilingual", "chemistry", "FDA", "ICH Guideline", "21 CFR 210",
-    "biological sciences", "clinical research", "clinical trials", "drug safety", "ISO 9001", "ISO9001", "Life Sciences", "Biotech", "safety standards", "gt.school", "degree in accounting", "degree in Finance", "ISQM", "ISQM1",
-    "QA/QC", "Electrical Engineering", "IS09001"
+    "agriculture",
+    "farm",
+    "food safety",
+    "manufacture",
+    "manufacturing",
+    "Bilingual",
+    "chemistry",
+    "FDA",
+    "ICH Guideline",
+    "21 CFR 210",
+    "biological sciences",
+    "clinical research",
+    "clinical trials",
+    "drug safety",
+    "ISO 9001",
+    "ISO9001",
+    "Life Sciences",
+    "Biotech",
+    "safety standards",
+    "gt.school",
+    "degree in accounting",
+    "degree in Finance",
+    "ISQM",
+    "ISQM1",
+    "QA/QC",
+    "Electrical Engineering",
+    "IS09001"
   ],
-  "title_exclude": ["frontend", "fron end", "game"],
-  "title_include": ["python", "developer", "backend", "BE", "engineer"],
-  "company_exclude": ["ClickJobs.io"],
-  "languages": ["en"],
-  "timespan": "r84600",
+  "title_exclude": [
+    "frontend",
+    "game",
+    "front end"
+  ],
+  "title_include": [
+    "automation",
+    "php",
+    "javascript",
+    "developer",
+    "backend",
+    "BE",
+    "engineer"
+  ],
+  "company_exclude": [
+    "ClickJobs.io"
+  ],
+  "languages": [
+    "en"
+  ],
+  "timespan": "r604800",
   "jobs_tablename": "jobs",
   "filtered_jobs_tablename": "filtered_jobs",
   "db_path": "./data/my_database.db",
   "pages_to_scrape": 10,
-  "rounds": 1,
+  "rounds": 3,
   "days_to_scrape": 10,
   "app_table": "jobs"
-  }
-  
+}
